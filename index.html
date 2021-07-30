@@ -5,25 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Product+Sans" rel="stylesheet">
+    <link href="styles/css/all.css" rel="stylesheet">
     <title>Google</title>
 </head>
 <body>
-    <ul class="navbar">
-        <li class="navbar-item-text"><a href="#gmail">Gmail</a></li>
-        <li class="navbar-item-text"><a href="#images">Images</a></li>
-        <li class="navbar-item" id="google-menu-item"><input type="image" src="images/google-menu.png" name="google-menu" id="img-google-menu"></li>
-        <li class="navbar-item"><a href="#sign-in" id="sign-in">Sign in</a></li>
-    </ul>
+    <div class="main-body">
+        <ul class="navbar">
+            <li class="navbar-item-text"><a href="#gmail">Gmail</a></li>
+            <li class="navbar-item-text"><a href="#images">Images</a></li>
+            <li class="navbar-item" id="google-menu-item"><input type="image" src="images/google-menu.png" name="google-menu" id="img-google-menu"></li>
+            <li class="navbar-item"><a href="#sign-in" id="sign-in">Sign in</a></li>
+        </ul>
 
-    <img src="images/google-logo.png" alt="Google logo" id="img-google-logo">
+        <img src="images/google-logo.png" alt="Google logo" id="img-google-logo">
 
-    <input type="text" name="search-bar" id="search-bar">
+        <div class="search-container">
+            <div class="input-icons">
+                <i class="fas fa-search fa-sm icon"></i>
+                <input type="text" name="search-bar" id="search-bar">
+            </div>
+        </div>
 
-    <div class="search-btns">
-        <button type=button class="search-btn">Google Search</button>
-        <button type=button class="search-btn">I'm Feeling Lucky</button>
+        <div class="search-btns">
+            <button type=button class="search-btn">Google Search</button>
+            <button type=button class="search-btn">I'm Feeling Lucky</button>
+        </div>
+
+        <div class="change-lang-container"> 
+            <p class="change-lang">Google offered in: <a href="#language" id="language">english</a></p>
+        </div>
+
+        <div class="bottom-bar">
+            <ul class="location">
+                <li class="location-item">Bulgaria</li>
+            </ul>
+
+            <ul class="bottom-bar-list">
+                <li class="bottom-bar-item"><a href="#about">About</a></li>
+                <li class="bottom-bar-item"><a href="#advertising">Advertising</a></li>
+                <li class="bottom-bar-item"><a href="#business">Business</a></li>
+                <li class="bottom-bar-item"><a href="#search-works">How Search works</a></li>
+                <li class="bottom-bar-item"><a href="#privacy">Privacy</a></li>
+                <li class="bottom-bar-item"><a href="#terms">Terms</a></li>
+                <li class="bottom-bar-item"><a href="#settings">Settings</a></li>
+            </ul>
+        </div>
     </div>
-
-    <p>Google offered in: <a href="#language" id="language">english</a></p>
 </body>
 </html>

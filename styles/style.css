@@ -1,6 +1,17 @@
-body {
+html {
+    font-family: "Product Sans", sans-serif;
+}
+
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.main-body {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 #img-google-logo {
@@ -15,14 +26,15 @@ body {
     display:flex;
     justify-content: flex-end;
     align-items: center;
+    justify-items: center;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 5px 10px;
 }
 
 .navbar-item, .navbar-item-text {
     margin: 5px;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -63,13 +75,33 @@ input[id="img-google-menu"] {
     box-shadow: 0 0 5px lightblue;
 }
 
-#search-bar {
+.search-container {
     display: flex;
+    align-self: center;
+    width: 40%;
+    margin: 10px 40px 10px 0;
+}
+
+.input-icons i {
+    position: absolute;
+}
+  
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+.icon {
+    padding: 15px 15px;
+    min-width: 40px;
+    color: #c1c1c1;
+}
+
+#search-bar {
+    width: 100%;
     border-radius: 50px;
     border: 1px solid lightgray;
-    flex: 0 0 40px;
-    margin: 0 400px;
-    padding-left: 30px;
+    padding: 10px 40px;
     font-size: 16px;
 }
 
@@ -97,7 +129,57 @@ input[id="img-google-menu"] {
     cursor: pointer;
 }
 
-p {
+.change-lang-container {
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+.change-lang {
+    color: #4f4f4f;
     text-align: center;
     font-size: 14px;
+}
+
+.bottom-bar {
+    flex-shrink: 0;
+}
+
+.location {
+    display: flex;
+    justify-content: start;
+    list-style: none;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.location-item {
+    flex: 1 0 auto;
+    padding: 15px 30px;
+    color: gray;
+}
+
+.bottom-bar-list {
+    flex-shrink: 1;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-bar-item{
+    padding: 15px 30px;
+}
+
+.bottom-bar-item:hover, .bottom-bar-item-r:hover {
+    text-decoration: underline;
+    text-decoration-color: gray;
+}
+
+
+.bottom-bar-item a {
+    color: gray;
 }
