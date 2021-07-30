@@ -1,5 +1,5 @@
 html {
-    font-family: "Product Sans", sans-serif;
+    font-family: arial, sans-serif;
 }
 
 body, html {
@@ -34,7 +34,7 @@ body, html {
 
 .navbar-item, .navbar-item-text {
     margin: 5px;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
 }
 
@@ -62,12 +62,12 @@ input[id="img-google-menu"] {
 }
 
 #sign-in {
-    padding: 7px 20px;
+    padding: 8px 20px;
     background-color: #0077FF;
     color: white;
     border-radius: 5px;
     border: 1px solid transparent;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 #sign-in:hover {
@@ -78,8 +78,8 @@ input[id="img-google-menu"] {
 .search-container {
     display: flex;
     align-self: center;
-    width: 40%;
-    margin: 10px 40px 10px 0;
+    width: 35%;
+    margin: 10px 80px 10px 0;
 }
 
 .input-icons i {
@@ -102,7 +102,7 @@ input[id="img-google-menu"] {
     border-radius: 50px;
     border: 1px solid lightgray;
     padding: 10px 40px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 #search-bar:hover {
@@ -137,7 +137,7 @@ input[id="img-google-menu"] {
 .change-lang {
     color: #4f4f4f;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .bottom-bar {
@@ -158,20 +158,26 @@ input[id="img-google-menu"] {
     flex: 1 0 auto;
     padding: 15px 30px;
     color: gray;
+    font-size: 14px;
 }
 
 .bottom-bar-list {
     flex-shrink: 1;
     display: flex;
-    justify-content: space-between;
     list-style: none;
     background-color: #f3f3f3;
     margin: 0;
     padding: 0;
 }
 
-.bottom-bar-item{
+.bottom-bar-item, .bottom-bar-item-r{
     padding: 15px 30px;
+    font-size: 14px;
+    justify-self: flex-start;
+}
+
+.bottom-bar-item-r {
+    margin-left: auto;
 }
 
 .bottom-bar-item:hover, .bottom-bar-item-r:hover {
@@ -179,7 +185,6 @@ input[id="img-google-menu"] {
     text-decoration-color: gray;
 }
 
-
-.bottom-bar-item a {
+.bottom-bar-item a, .bottom-bar-item-r a {
     color: gray;
 }
